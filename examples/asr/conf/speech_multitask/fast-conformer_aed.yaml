@@ -190,7 +190,7 @@ model:
     dropout_emb: 0.0 # The dropout used for embeddings
     dropout_att: 0.1 # The dropout for multi-headed attention modules
 
-  # Optional Transformer Encoder sandwitched between ASR Encoder and Transformer Ddcoder.
+  # Optional Transformer Encoder sandwitched between ASR Encoder and Transformer Decoder.
   # Only used if num_layers > 0
   transf_encoder:
     _target_: nemo.collections.asr.modules.transformer.transformer_encoders.TransformerEncoder
